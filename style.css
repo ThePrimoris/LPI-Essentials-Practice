@@ -1,0 +1,142 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.question {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.question-header {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.correct-answer {
+  background-color: #1e4620;
+  border-left: 6px solid #28a745;
+  padding: 10px;
+  border-radius: 4px;
+  color: #d4f4dc;
+}
+
+.incorrect-answer {
+  background-color: #4d1c1c;
+  border-left: 6px solid #dc3545;
+  padding: 10px;
+  border-radius: 4px;
+  color: #f8d7da;
+}
+
+label {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 3px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#submitBtn:hover {
+  background-color: #119a41;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.nav-group {
+  display: flex;
+  gap: 10px;
+}
+
+.submit-group {
+  margin-left: auto;
+}
+
+#results {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+#quizForm > .question {
+  display: block;
+  position: relative;
+}
+
+.flag-button-wrapper {
+  margin-left: 690px;
+}
+
+.flag-button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.flag-button.flagged {
+  background-color: #1e1e1e;
+}
+
+.question.submitted .flag-button-wrapper {
+  display: none;
+}
+
+.selected-answer {
+  outline: 2px solid #888;
+}
+
+.correct {
+  background-color: #119a41 !important;
+}
+
+.incorrect {
+  background-color: #e6465a !important;
+}
+
+.flagged-question-label {
+  font-weight: bold;
+  color: #e6465a;
+  margin-top: 10px;
+}

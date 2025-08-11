@@ -1,0 +1,1133 @@
+[
+  {
+    "id": 1,
+    "question": "What are the differences between hard disk drives and solid state disks? (Choose two.)",
+    "options": [
+      "Hard disks can fail due to physical damage, while solid state disks cannot fail.",
+      "Solid state disks can store many times as much data as hard disk drives.",
+      "/dev/sda is a hard disk device while /dev/ssda is a solid state disk.",
+      "Solid state disks provide faster access to stored data than hard disks.",
+      "Hard disks have a motor and moving parts, solid state disks do not."
+    ],
+    "answer": [
+      "Hard disks have a motor and moving parts, solid state disks do not.",
+      "Solid state disks provide faster access to stored data than hard disks."
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Members of a team already have experience using Red Hat Enterprise Linux. For a small hobby project, the team wants to set up a Linux server without paying for a subscription. Which of the following Linux distributions allows the team members to apply as much of their Red Hat Enterprise Linux knowledge as possible?",
+    "options": [
+      "CentOS",
+      "Debian GNU/Linux",
+      "Ubuntu Linux LTS",
+      "openSUSE",
+      "Raspbian"
+    ],
+    "answer": [
+      "CentOS"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Reverse DNS assigns hostnames to IP addresses. How is the name of the IP address 198.51.100.165 stored on a DNS server?",
+    "options": [
+      "In the A record for 165.100.51.198.ipv4.arpa.",
+      "In the REV record for arpa.in-addr.198.51.100.165.",
+      "In the RNAME record for 198-51-100-165.rev.arpa.",
+      "In the ARPA record for 165.100.51.198.rev.",
+      "In the PTR record for 165.100.51.198.in-addr.arpa."
+    ],
+    "answer": [
+      "In the PTR record for 165.100.51.198.in-addr.arpa."
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Which of the following types of bus can connect hard disk drives with the motherboard?",
+    "options": [
+      "The RAM bus",
+      "The NUMA bus",
+      "The Auto bus",
+      "The CPU bus",
+      "The SATA bus"
+    ],
+    "answer": [
+      "The SATA bus"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Which of the following commands can be used to resolve a DNS name to an IP address?",
+    "options": [
+      "dnsname",
+      "query",
+      "dns",
+      "iplookup",
+      "host"
+    ],
+    "answer": [
+      "host"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What information can be displayed by top?",
+    "options": [
+      "User accounts, ordered by the number of files.",
+      "Running processes, ordered by CPU or RAM consumption.",
+      "User accounts, ordered by the number of logins.",
+      "User groups, ordered by the number of members.",
+      "Existing files, ordered by their size."
+    ],
+    "answer": [
+      "Running processes, ordered by CPU or RAM consumption."
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Which of the following outputs comes from the command free?",
+    "options": [
+      "A. 21:04 up 14 dats, 7:43, 3 users, load average: 0.89, 1.00, 0.99",
+      "avg-cpu:  %user   %nice %system %iowait  %steal   %idle\n16.36    0.00    2.99    1.06    0.00   79.59",
+      "Filesystem      Size  Used Avail Use% Mounted on \n/dev/nvme0n1p2  468G   33G  412G   8% /",
+      "120K  /tmp",
+      "total        used        free      shared  buff/cache   available\nMem:            15Gi       2.3Gi         9Gi       910Mi       3.0Gi        11Gi\nSwap:          2.0Gi          0B       2.0Gi"
+    ],
+    "answer": [
+      "total        used        free      shared  buff/cache   available\nMem:            15Gi       2.3Gi         9Gi       910Mi       3.0Gi        11Gi\nSwap:          2.0Gi          0B       2.0Gi"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What is true about the dmesg command? (Choose two.)",
+    "options": [
+      "It might not display older information because it was overwritten by newer information.",
+      "It sends messages to the command lines of all current user sessions.",
+      "It traces the execution of a command and shows each step the program carries out.",
+      "It displays the content of the Linux kernel\u2019s ring buffer.",
+      "It immediately outputs all new messages written to the system journal."
+    ],
+    "answer": [
+      "It displays the content of the Linux kernel\u2019s ring buffer.",
+      "It might not display older information because it was overwritten by newer information."
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Which of the following outputs could stem from the command last?",
+    "options": [
+      "1 ls\n 2 cat text.txt\n 3 logout",
+      "Password for user last changed at Sat Mar 31 16:38:57 EST 2018",
+      "Last login: Fri Mar 23 10:56:39 2018 from server.example.com",
+      "EXT4-fs(dm7): mountes filesystem with ordered data mode. Opts: (null)",
+      "root tty2 Wed May 17 21:11 - 21:11 (00:00)"
+    ],
+    "answer": [
+      "root tty2 Wed May 17 21:11 - 21:11 (00:00)"
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What is true about the owner of a file?",
+    "options": [
+      "The user owning a file must be a member of the file\u2019s group.",
+      "The owner of a file cannot be changed once it is assigned to an owner.",
+      "Each file is owned by exactly one user and one group.",
+      "The owner of a file always has full permissions when accessing the file.",
+      "When a user is deleted, all files owned by the user disappear."
+    ],
+    "answer": [
+      "Each file is owned by exactly one user and one group."
+    ]
+  },
+  {
+    "id": 11,
+    "question": "What is the UID of the user root?",
+    "options": [
+      "255",
+      "0",
+      "1",
+      "-1",
+      "65536"
+    ],
+    "answer": [
+      "0"
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Which permissions are set on a regular file once the permissions have been modified with the command chmod 654 file.txt?",
+    "options": [
+      "d\u2014wxr-x--",
+      "drw-r-xr--",
+      "\u2013rwxrw---x",
+      "\u2013wxr-x--x",
+      "-rw-r-xr--"
+    ],
+    "answer": [
+      "-rw-r-xr--"
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Which of the following tar options handle compression? (Choose two.)",
+    "options": [
+      "-z",
+      "-g",
+      "-z2",
+      "-bz",
+      "-j"
+    ],
+    "answer": [
+      "-z",
+      "-j"
+    ]
+  },
+  {
+    "id": 14,
+    "question": "Which of the following permissions are set on the /tmp/ directory?",
+    "options": [
+      "rwX",
+      "rwxrwxrwt",
+      "r-xr-X--t",
+      "rwSrw-rw-",
+      "rwxrwS---"
+    ],
+    "answer": [
+      "rwxrwxrwt"
+    ]
+  },
+  {
+    "id": 15,
+    "question": "What information is stored in /etc/passwd? (Choose three.)",
+    "options": [
+      "The user\u2019s default shell",
+      "The user\u2019s storage space limit",
+      "The username",
+      "The numerical user ID",
+      "The encrypted password"
+    ],
+    "answer": [
+      "The user\u2019s default shell",
+      "The username",
+      "The numerical user ID"
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Which command adds the new user tux and creates the user\u2019s home directory with default configuration files?",
+    "options": [
+      "useradd \u2013m tux",
+      "defaultuser tux",
+      "useradd \u2013o default tux",
+      "passwd \u2013a tux",
+      "usercreate tux"
+    ],
+    "answer": [
+      "useradd \u2013m tux"
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Which of the following commands creates an archive file work.tar from the contents of the directory ./work/?",
+    "options": [
+      "tar work > work.tar",
+      "tar work.tar < ./work/",
+      "tar --new work.tar ./work/",
+      "tar \u2013cf work.tar ./work/",
+      "tar \u2013create work.tgz \u2013content ./work/"
+    ],
+    "answer": [
+      "tar \u2013cf work.tar ./work/"
+    ]
+  },
+  {
+    "id": 18,
+    "question": "The current directory contains the following file: -rwxr-xr-x 1 root root 859688 Feb 7 08:15 test.sh Given that the file is a valid shell script, how can this script be executed? (Choose two.)",
+    "options": [
+      "bash test.sh",
+      "${test.sh}",
+      "cmd ./test.sh",
+      "./test.sh",
+      "run test.sh"
+    ],
+    "answer": [
+      "bash test.sh",
+      "./test.sh"
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Which of the following keys can be pressed to exit less?",
+    "options": [
+      "l",
+      "e",
+      "q",
+      "!",
+      "x"
+    ],
+    "answer": [
+      "q"
+    ]
+  },
+  {
+    "id": 20,
+    "question": "What keyword is used in a shell script to begin a loop? (Specify one keyword only, without any additional information.)",
+    "options": [
+      "for",
+      "forloop"
+    ],
+    "answer": [
+      "for"
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Which of the following commands will search for the file foo.txt under the directory /home?",
+    "options": [
+      "find /home \u2013 file foo.txt",
+      "find /home \u2013name foo.txt",
+      "find /home foo.txt",
+      "search /home \u2013file foo.txt",
+      "search /home foo. txt"
+    ],
+    "answer": [
+      "find /home \u2013name foo.txt"
+    ]
+  },
+  {
+    "id": 22,
+    "question": "A directory contains the following files: a.txt and b.txt, What would be the output of the following shell script? for file in *.txt",
+    "options": [
+      "a b",
+      "*.txt",
+      "c.cav",
+      "a.txt",
+      "a.txt b.txt"
+    ],
+    "answer": [
+      "a.txt b.txt"
+    ]
+  },
+  {
+    "id": 23,
+    "question": "The current directory contains the following file: -rw-r\u2014r\u2014 1 root exec 24551 Apr 2 12:36 test.sh The file contains a valid shell script, but executing this file using ./test.sh leads to this error: bash: ./test.sh: Permission denied What should be done in order to successfully execute the script?",
+    "options": [
+      "The file\u2019s extension should be changed from .sh to .bin.",
+      "The script should be run using #!./test. sh instead of ./test.sh.",
+      "The execute bit should be set in the file\u2019s permissions.",
+      "The user executing the script should be added to the exec group.",
+      "The SetUID bit should be set in the file\u2019s permissions"
+    ],
+    "answer": [
+      "The execute bit should be set in the file\u2019s permissions."
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Which of the following commands sorts the output of the command export-logs?",
+    "options": [
+      "export-logs < sort",
+      "export-logs & sort",
+      "export-logs <> sort",
+      "export-logs | sort",
+      "export-logs > sort"
+    ],
+    "answer": [
+      "export-logs | sort"
+    ]
+  },
+  {
+    "id": 25,
+    "question": "What is a Linux distribution?",
+    "options": [
+      "A set of changes to Linux which enable Linux to run on another processor architecture.",
+      "An operating system based on Linux but incompatible to the regular Linux kernel.",
+      "The Linux file system as seen from the root account after mounting all file systems.",
+      "The set of rules which governs the distribution of Linux kernel source code.",
+      "A bundling of the Linux kernel, system utilities and other software."
+    ],
+    "answer": [
+      "A bundling of the Linux kernel, system utilities and other software."
+    ]
+  },
+  {
+    "id": 26,
+    "question": "Where is the operating system of a Raspberry Pi stored?",
+    "options": [
+      "On a removable SD card which is put into the Raspberry Pi.",
+      "On rewritable flash storage which is built into the Raspberry Pi.",
+      "On a read only partition on the Raspberry Pi\u2019s firmware, next to the BIOS.",
+      "On the master device attached to the Raspberry Pi\u2019s IDE bus.",
+      "On a Linux extension module connected to the Raspberry Pi\u2019s GPIO pins."
+    ],
+    "answer": [
+      "On a removable SD card which is put into the Raspberry Pi."
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Which of the following programs is a graphical editor for vector graphics?",
+    "options": [
+      "NGINX",
+      "Python",
+      "MySQL",
+      "Samba",
+      "Inkscape"
+    ],
+    "answer": [
+      "Inkscape"
+    ]
+  },
+  {
+    "id": 28,
+    "question": "Which package management tool is used in Red Hat-based Linux Systems?",
+    "options": [
+      "rpm",
+      "apt-get",
+      "dpkg",
+      "packagectl",
+      "portage"
+    ],
+    "answer": [
+      "rpm"
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Which of the following characters in a shell prompt indicates the shell is running with root privileges?",
+    "options": [
+      "*",
+      "&",
+      "$",
+      "#",
+      "!"
+    ],
+    "answer": [
+      "#"
+    ]
+  },
+  {
+    "id": 30,
+    "question": "Which of the following are typical services offered by public cloud providers? (Choose three.)",
+    "options": [
+      "Internet as a Service(IaaS)",
+      "Graphics as a Service (GaaS)",
+      "Platform as a Service(PaaS)",
+      "Infrastructure as a Service(IaaS)",
+      "Software as a Service (SaaS)"
+    ],
+    "answer": [
+      "Infrastructure as a Service(IaaS)",
+      "Platform as a Service(PaaS)",
+      "Software as a Service (SaaS)"
+    ]
+  },
+  {
+    "id": 31,
+    "question": "What is defined by a Free Software license?",
+    "options": [
+      "Conditions for modifying and distributing the licensed software.",
+      "Details of the technical documentation each contributor has to provide.",
+      "A complete list of libraries required to compile the licensed software.",
+      "The programming languages which may be used to extend the licensed program.",
+      "Limits on the purposes for which the licensed software may be used."
+    ],
+    "answer": [
+      "Conditions for modifying and distributing the licensed software."
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Why are web browser cookies considered dangerous?",
+    "options": [
+      "Cookies store critical data which is lost when a cookie is deleted.",
+      "Cookies are always public and accessible to anyone on the internet.",
+      "Cookies support identification and tracking of users.",
+      "Cookies can contain and execute viruses and malware.",
+      "Cookies consume significant amounts of storage and can exhaust disk space."
+    ],
+    "answer": [
+      "Cookies support identification and tracking of users."
+    ]
+  },
+  {
+    "id": 33,
+    "question": "Running the command rm Downloads leads to the following error: rm: cannot remove \u2018Downloads/\u2019: Is a directory Which of the following commands can be used instead to remove Downloads, assuming Downloads is empty? (Choose two.)",
+    "options": [
+      "rmdir Downloads",
+      "rm \u2013r Downloads",
+      "rem Downloads",
+      "dir \u2013r Downloads",
+      "undir Downloads"
+    ],
+    "answer": [
+      "rm \u2013r Downloads",
+      "rmdir Downloads"
+    ]
+  },
+  {
+    "id": 34,
+    "question": "What is true about a recursive directory listing?",
+    "options": [
+      "It includes ownership information for the files.",
+      "It includes details of file system internals, such as inodes.",
+      "It includes a preview of content for each file in the directory.",
+      "It includes the content of sub-directories.",
+      "It includes the permissions of the directory listed."
+    ],
+    "answer": [
+      "It includes the content of sub-directories."
+    ]
+  },
+  {
+    "id": 35,
+    "question": "Which of the following commands are used to get information on the proper use of ls? (Choose two.)",
+    "options": [
+      "option ls",
+      "info ls",
+      "usage ls",
+      "manual ls",
+      "man ls"
+    ],
+    "answer": [
+      "man ls",
+      "info ls"
+    ]
+  },
+  {
+    "id": 36,
+    "question": "Which of the following directories contains information, documentation and example configuration files for installed software packages?",
+    "options": [
+      "/usr/share/doc/",
+      "/etc/defaults/",
+      "/var/info/",
+      "/usr/examples/",
+      "/doc/"
+    ],
+    "answer": [
+      "/usr/share/doc/"
+    ]
+  },
+  {
+    "id": 37,
+    "question": "A user is currently in the directory /home/user/Downloads/ and runs the command ls ../Documents/ Assuming it exists, which directory\u2019s content is displayed?",
+    "options": [
+      "/home/user/Documents/Downloads/",
+      "/home/user/Documents/",
+      "/home/user/Downloads/Documents/",
+      "/Documents/",
+      "/home/Documents"
+    ],
+    "answer": [
+      "/home/user/Documents/"
+    ]
+  },
+  {
+    "id": 38,
+    "question": "Which of the following commands adds the directory /new/dir/ to the PATH environment variable?",
+    "options": [
+      "export PATH=/new/dir: PATH",
+      "PATH=/new/dir: PATH",
+      "export $PATH=/new/dir: $PATH",
+      "$PATH=/new/dir: $PATH",
+      "export PATH=/new/dir: $PATH"
+    ],
+    "answer": [
+      "export PATH=/new/dir: $PATH"
+    ]
+  },
+  {
+    "id": 39,
+    "question": "A directory contains the following three files: texts 1.txt texts 2.txt texts 3.csv Which command copies the two files ending in .txt to the /tmp/ directory?",
+    "options": [
+      "cp. \\.txt /tmp/",
+      "cp *.txt /tmp/",
+      "cp ?.txt /tmp/",
+      "cp ??.txt /tmp/",
+      "cp $?.txt /tmp/"
+    ],
+    "answer": [
+      "cp *.txt /tmp/"
+    ]
+  },
+  {
+    "id": 40,
+    "question": "FILL BLANK When typing a long command line at the shell, what single character can be used to split a command across multiple lines?",
+    "options": [
+      "/",
+      "\\"
+    ],
+    "answer": [
+      "\\"
+    ]
+  },
+  {
+    "id": 41,
+    "question": "Which of the following DNS record types hold an IP address? (Choose two.)",
+    "options": [
+      "NS",
+      "AAAA",
+      "MX",
+      "A",
+      "CNAME"
+    ],
+    "answer": [
+      "AAAA",
+      "A"
+    ]
+  },
+  {
+    "id": 42,
+    "question": "Which of the following values could be a process ID on Linux?",
+    "options": [
+      "/bin/bash",
+      "60b503cd-019e-4300-a7be-922f074ef5ce",
+      "/sys/pid/9a14",
+      "fff3",
+      "21398"
+    ],
+    "answer": [
+      "21398"
+    ]
+  },
+  {
+    "id": 43,
+    "question": "Which of the following is a protocol used for automatic IP address configuration?",
+    "options": [
+      "NFS",
+      "LDAP",
+      "SMTP",
+      "DNS",
+      "DHCP"
+    ],
+    "answer": [
+      "DHCP"
+    ]
+  },
+  {
+    "id": 44,
+    "question": "Which of the following devices represents a hard disk partition?",
+    "options": [
+      "/dev/ttyS0",
+      "/dev/sata0",
+      "/dev/part0",
+      "/dev/sda2",
+      "/dev/sda/p2"
+    ],
+    "answer": [
+      "/dev/sda2"
+    ]
+  },
+  {
+    "id": 45,
+    "question": "Which of the following statements regarding Linux hardware drivers is correct?",
+    "options": [
+      "Drivers are regular Linux programs which have to be run by the user who wants to use a device.",
+      "Drivers are not used by Linux because the BIOS handles all access to hardware on behalf of Linux.",
+      "Drivers are stored on their devices and are copied by the Linux kernel when a new device is attached",
+      "Drivers are downloaded from the vendor's driver repository when a new device is attached.",
+      "Drivers are either compiled into the Linux kernel or are loaded as kernel modules."
+    ],
+    "answer": [
+      "Drivers are either compiled into the Linux kernel or are loaded as kernel modules."
+    ]
+  },
+  {
+    "id": 46,
+    "question": "What can be found in the /proc/ directory?",
+    "options": [
+      "One directory per installed program.",
+      "One directory per installed program.",
+      "One file per existing user account.",
+      "One directory per running process.",
+      "One log file per running service."
+    ],
+    "answer": [
+      "One directory per running process."
+    ]
+  },
+  {
+    "id": 47,
+    "question": "A new server needs to be installed to host services for a period of several years. Throughout this time, the server should receive important\nsecurity updates from its Linux distribution.\nWhich of the following Linux distributions meet these requirements? (Choose two.)",
+    "options": [
+      "Ubuntu Linux LTS",
+      "Fedora Linux",
+      "Debian GNU/Linux Unstable",
+      "Ubuntu Linux non-LTS",
+      "Red Hat Enterprise Linux"
+    ],
+    "answer": [
+      "Ubuntu Linux LTS",
+      "Red Hat Enterprise Linux"
+    ]
+  },
+  {
+    "id": 48,
+    "question": "Which of the following directories must be mounted with read and write access if it resides on its own dedicated file system?",
+    "options": [
+      "/opt",
+      "/lib",
+      "/etc",
+      "/var",
+      "/usr"
+    ],
+    "answer": [
+      "/var"
+    ]
+  },
+  {
+    "id": 49,
+    "question": "The ownership of the file doku.odt should be changed. The new owner is named tux. Which command accomplishes this change?",
+    "options": [
+      "chmod u=tux doku.odt",
+      "newuser doku.odt tux",
+      "chown tux doku.odt",
+      "transfer tux: doku.odt",
+      "passwd doku.odt:tux"
+    ],
+    "answer": [
+      "chown tux doku.odt"
+    ]
+  },
+  {
+    "id": 50,
+    "question": "What happens to a file residing outside the home directory when the file owner's account is deleted? (Choose two.)",
+    "options": [
+      "During a file system check, the file is moved to /lost +found.",
+      "The file is removed from the file system.",
+      "The UID of the former owner is shown when listing the file's details.",
+      "The user root is set as the new owner of the file.",
+      "Ownership and permissions of the file remain unchanged."
+    ],
+    "answer": [
+      "The UID of the former owner is shown when listing the file's details.",
+      "Ownership and permissions of the file remain unchanged."
+    ]
+  },
+  {
+    "id": 51,
+    "question": "Which statements about the directory /etc/skel are correct? (Choose two.)",
+    "options": [
+      "The personal user settings of root are stored in this directory.",
+      "The files from the directory are copied to the home directory of the new user when starting the system.",
+      "The files from the directory are copied to the home directory of a new user when the account is created.",
+      "The directory contains a default set of configuration files used by the useradd command.",
+      "The directory contains the global settings for the Linux system."
+    ],
+    "answer": [
+      "The files from the directory are copied to the home directory of a new user when the account is created.",
+      "The directory contains a default set of configuration files used by the useradd command."
+    ]
+  },
+  {
+    "id": 52,
+    "question": "What is true about links in a Linux file system?",
+    "options": [
+      "A symbolic link can only point to a file and not to a directory.",
+      "A hard link can only point to a directory and never to a file.",
+      "When the target of the symbolic link is moved, the link is automatically updated.",
+      "A symbolic link can point to a file on another file system.",
+      "Only the root user can create hard links."
+    ],
+    "answer": [
+      "A symbolic link can point to a file on another file system."
+    ]
+  },
+  {
+    "id": 53,
+    "question": "Which files are the source of the information in the following output? (Choose two.) uid=1000 (bob) gid=1000 (bob) groups=1000 (bob), 10\n(wheel), 150 (wireshark), 989 (docker), 1001 (libvirt)",
+    "options": [
+      "/etc/id",
+      "/etc/passwd",
+      "/etc/group",
+      "/home/index",
+      "/var/db/users"
+    ],
+    "answer": [
+      "/etc/passwd",
+      "/etc/group"
+    ]
+  },
+  {
+    "id": 54,
+    "question": "Which of the following tasks can the command passwd accomplish? (Choose two.)",
+    "options": [
+      "Change a user's username.",
+      "Change a user's password.",
+      "Create a new user account.",
+      "Create a new user group.",
+      "Lock a user account."
+    ],
+    "answer": [
+      "Change a user's password.",
+      "Lock a user account."
+    ]
+  },
+  {
+    "id": 55,
+    "question": "What is true about the su command?",
+    "options": [
+      "It is the default shell of the root account.",
+      "It can only be used by the user root.",
+      "It runs a shell or command as another user.",
+      "It changes the name of the main administrator account.",
+      "It locks the root account in specific time frames."
+    ],
+    "answer": [
+      "It runs a shell or command as another user."
+    ]
+  },
+  {
+    "id": 56,
+    "question": "FILL BLANK -\nWhat parameter of ls prints a recursive listing of a directory's content? (Specify ONLY the option name without any values or parameters.)",
+    "options": [
+      "The answer is 'ls -R' ;)"
+    ],
+    "answer": [
+      "The answer is 'ls -R' ;)"
+    ]
+  },
+  {
+    "id": 57,
+    "question": "Most commands on Linux can display information on their usage. How can this information typically be displayed?",
+    "options": [
+      "By running the command with the option /? or /??.",
+      "By running the command with the option ?! or ?=!.",
+      "By running the command with the option /doc or /documentation.",
+      "By running the command with the option -h or --help.",
+      "By running the command with the option -m or --manpage."
+    ],
+    "answer": [
+      "By running the command with the option -h or --help."
+    ]
+  },
+  {
+    "id": 58,
+    "question": "Which of the following commands shows the absolute path to the current working directory?",
+    "options": [
+      "who",
+      "cd ..",
+      "pwd",
+      "ls -l",
+      "cd ~/home"
+    ],
+    "answer": [
+      "pwd"
+    ]
+  },
+  {
+    "id": 59,
+    "question": "Which of the following commands output the content of the file Texts 2.txt? (Choose two.)",
+    "options": [
+      "cat 'Texts 2.txt'",
+      "cat -- Texts 2.txt",
+      "cat |Texts 2.txt|",
+      "cat 'Texts\\ 2.txt'",
+      "cat Texts\\ 2.txt"
+    ],
+    "answer": [
+      "cat 'Texts 2.txt'",
+      "cat Texts\\ 2.txt"
+    ]
+  },
+  {
+    "id": 60,
+    "question": "Which command displays file names only and no additional information?",
+    "options": [
+      "ls -a",
+      "ls -lh",
+      "ls -l",
+      "ls -alh",
+      "ls -nl"
+    ],
+    "answer": [
+      "ls -a"
+    ]
+  },
+  {
+    "id": 61,
+    "question": "What is the purpose of the PATH environment variable?",
+    "options": [
+      "It allows the execution of commands without the need to know the location of the executable.",
+      "It increases security by preventing commands from running in certain locations.",
+      "It specifies the location of a user's home directory.",
+      "It indicates the location of the default shell to be used when a user logs in.",
+      "It contains the absolute path to the current directory."
+    ],
+    "answer": [
+      "It allows the execution of commands without the need to know the location of the executable."
+    ]
+  },
+  {
+    "id": 62,
+    "question": "Which of the following commands sets the variable USERNAME to the value bob?",
+    "options": [
+      "set USERNAME bob",
+      "$USERNAME==bob",
+      "var USERNAME=bob",
+      "USERNAME<=bob",
+      "USERNAME=bob"
+    ],
+    "answer": [
+      "USERNAME=bob"
+    ]
+  },
+  {
+    "id": 63,
+    "question": "What command displays manual pages? (originally a FILL BLANK question)",
+    "options": [
+      "manul",
+      "man",
+      "help -m",
+      "lsman",
+      "info --manual"
+    ],
+    "answer": [
+      "man"
+    ]
+  },
+  {
+    "id": 64,
+    "question": "Which command copies the contents of the directory /etc/, including all sub-directories, to /root/?",
+    "options": [
+      "copy /etc /root",
+      "cp -r /etc/* /root",
+      "cp -v /etc/* /root",
+      "rcp /etc/* /root",
+      "cp -R /etc/*.* /root"
+    ],
+    "answer": [
+      "cp -r /etc/* /root"
+    ]
+  },
+  {
+    "id": 65,
+    "question": "Which of the following commands puts the lines of the file data.csv into alphabetical order?",
+    "options": [
+      "a..z data.csv",
+      "sort data.csv",
+      "abc data.csv",
+      "wc -s data.csv",
+      "grep --sort data.csv"
+    ],
+    "answer": [
+      "sort data.csv"
+    ]
+  },
+  {
+    "id": 66,
+    "question": "Which of the following examples shows the general structure of a for loop in a shell script?",
+    "options": [
+      "for *.txt as file => echo $file",
+      "for *.txt ( echo $i )",
+      "for file in *.txt do echo $i done",
+      "for ls *.txt exec {} \\;",
+      "foreach @{file} { echo $i }"
+    ],
+    "answer": [
+      "for file in *.txt do echo $i done"
+    ]
+  },
+  {
+    "id": 67,
+    "question": "Which operator in a regular expression matches the preceding character either zero or one time?",
+    "options": [
+      "?",
+      "*",
+      "+",
+      "%",
+      "$"
+    ],
+    "answer": [
+      "?"
+    ]
+  },
+  {
+    "id": 68,
+    "question": "The file script.sh in the current directory contains the following content:\n#!/bin/bash\necho $MYVAR\nThe following commands are used to execute this script:\n\n\nMYVAR=value -\n./script.sh\nThe result is an empty line instead of the content of the variable MYVAR. How should MYVAR be set in order to make script.sh display the content\nof MYVAR?",
+    "options": [
+      "!MYVAR=value",
+      "env MYVAR=value",
+      "MYVAR=value",
+      "$MYVAR=value",
+      "export MYVAR=value"
+    ],
+    "answer": [
+      "export MYVAR=value"
+    ]
+  },
+  {
+    "id": 69,
+    "question": "What is the return value of a shell script after successful execution?",
+    "options": [
+      "1",
+      "0",
+      "-1",
+      "-255",
+      "255"
+    ],
+    "answer": [
+      "0"
+    ]
+  },
+  {
+    "id": 70,
+    "question": "Which of the following commands creates the ZIP archive poems.zip containing all files in the current directory whose names end in .txt?",
+    "options": [
+      "zip *.txt > poems.zip",
+      "zcat *.txt poems.zip",
+      "zip poems.zip *.txt",
+      "zip cfz poems.zip *.txt",
+      "cat *.txt | zip poems.zip"
+    ],
+    "answer": [
+      "zip poems.zip *.txt"
+    ]
+  },
+  {
+    "id": 71,
+    "question": "Which of the following statements are true regarding a typical shell script? (Choose two.)",
+    "options": [
+      "It has the executable permission bit set.",
+      "It starts with the two character sequence #!.",
+      "It is located in /usr/local/scripts/.",
+      "It is located in /etc/bash/scripts/.",
+      "It is compiled into a binary file compatible with the current machine architecture."
+    ],
+    "answer": [
+      "It has the executable permission bit set.",
+      "It starts with the two character sequence #!."
+    ]
+  },
+  {
+    "id": 72,
+    "question": "Which of the following commands extracts the contents of the compressed archive file1.tar.gz?",
+    "options": [
+      "tar -czf file1.tar.gz",
+      "ztar file1.tar.gz",
+      "tar -xzf file1.tar.gz",
+      "tar --extract file1.tar.gz",
+      "detar file1.tar.gz"
+    ],
+    "answer": [
+      "tar -xzf file1.tar.gz"
+    ]
+  },
+  {
+    "id": 73,
+    "question": "Which of the following commands finds all lines in the file operating-systems.txt which contain the term linux, regardless of the case?",
+    "options": [
+      "igrep linux operating-systems.txt",
+      "less -i linux operating-systems.txt",
+      "grep -i linux operating-systems.txt",
+      "cut linux operating-systems.txt",
+      "cut [Ll] [Ii] [Nn] [Uu] [Xx] operating-systems.txt"
+    ],
+    "answer": [
+      "grep -i linux operating-systems.txt"
+    ]
+  },
+  {
+    "id": 74,
+    "question": "Which one of the following statements concerning Linux passwords is true?",
+    "options": [
+      "All passwords can be decrypted using the system administrator's master password.",
+      "Passwords may never start with a non-letter.",
+      "Users cannot change their password once it has been set.",
+      "Passwords are only stored in hashed form.",
+      "Passwords may be at most six characters long."
+    ],
+    "answer": [
+      "Passwords are only stored in hashed form."
+    ]
+  },
+  {
+    "id": 75,
+    "question": "Which of the following programs are web servers? (Choose two.)",
+    "options": [
+      "Apache",
+      "Postfix",
+      "Curl",
+      "Dovecot",
+      "NGINX"
+    ],
+    "answer": [
+      "Apache",
+      "NGINX"
+    ]
+  },
+  {
+    "id": 76,
+    "question": "Which of the following Linux Distributions is derived from Red Hat Enterprise Linux?",
+    "options": [
+      "Raspbian",
+      "openSUSE",
+      "Debian",
+      "Ubuntu",
+      "CentOS"
+    ],
+    "answer": [
+      "CentOS"
+    ]
+  },
+  {
+    "id": 77,
+    "question": "Which of the following statements is true about Free Software?",
+    "options": [
+      "It is developed by volunteers only.",
+      "It may be modified by anyone using it.",
+      "It must always be available free of charge.",
+      "It only runs on Linux.",
+      "It is only distributed as a compiled binary."
+    ],
+    "answer": [
+      "It may be modified by anyone using it."
+    ]
+  },
+  {
+    "id": 78,
+    "question": "How is a new Linux computing instance provisioned in an laaS cloud?",
+    "options": [
+      "The standard Linux installer has to be run through a remote console.",
+      "After buying a Linux distribution, its vendor delivers it to a cloud instance.",
+      "The installation has to be prepared in a local virtual machine which is then copied to the cloud.",
+      "The cloud hosting organization provides a set of pre-prepared images of popular Linux distributions.",
+      "A provider-specific configuration file describing the desired installation is uploaded to the cloud provider."
+    ],
+    "answer": [
+      "The cloud hosting organization provides a set of pre-prepared images of popular Linux distributions."
+    ]
+  },
+  {
+    "id": 79,
+    "question": "What are the differences between a private web browser window and a regular web browser window? (Choose three.)",
+    "options": [
+      "Private web browser windows do not allow printing or storing websites.",
+      "Private web browser windows do not store cookies persistently.",
+      "Private web browser windows do not support logins into websites.",
+      "Private web browser windows do not keep records in the browser history.",
+      "Private web browser windows do not send regular stored cookies."
+    ],
+    "answer": [
+      "Private web browser windows do not store cookies persistently.",
+      "Private web browser windows do not keep records in the browser history.",
+      "Private web browser windows do not send regular stored cookies."
+    ]
+  },
+  {
+    "id": 80,
+    "question": "What is the preferred source for the installation of new applications in a Linux based operating system?",
+    "options": [
+      "The vendor's version management system",
+      "A CD-ROM disk",
+      "The distribution's package repository",
+      "The vendor's website",
+      "A retail store"
+    ],
+    "answer": [
+      "The distribution's package repository"
+    ]
+  }
+]

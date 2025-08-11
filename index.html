@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LPI Exam Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <form id="quizForm"></form>
+    <div class="nav-buttons">
+      <div class="nav-group">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+      </div>
+      <div class="submit-group">
+        <button id="submitBtn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="results"></div>
+<div id="flaggedResults"></div>
+<script>
+  const form = document.getElementById('quizForm');
+  const results = document.getElementById('results');
+  const flaggedResults = document.getElementById('flaggedResults');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const submitBtn = document.getElementById('submitBtn');
+
+  let quizData = [];
+  let current = 0;
+
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  fetch('lpi_questions.json')
+    .then(response => response.json())
+    .then(data => {
+      quizData = shuffle(data).map(q => ({
+        ...q,
+        options: shuffle([...q.options]),
+        flagged: false
+      }));
+      renderQuestions();
+      showQuestion(current);
+    });
+  
+  /*fetch('lpi_questions.json')
+  .then(response => response.json())
+  .then(data => {
+    quizData = shuffle(data)
+      .slice(0, 40)
+      .map(q => ({
+        ...q,
+        options: shuffle([...q.options]),
+        flagged: false
+      }));
+    renderQuestions();
+    showQuestion(current);
+  });*/
+
+  function renderQuestions() {
+    quizData.forEach((q, i) => {
+      const div = document.createElement('div');
+      div.className = 'question';
+      div.id = `q${i}`;
+
+      const flagBtnWrapper = document.createElement('div');
+flagBtnWrapper.className = 'flag-button-wrapper';
+
+const flagBtn = document.createElement('button');
+flagBtn.className = 'flag-button';
+flagBtn.textContent = '🚩 Flag';
+flagBtn.onclick = function(e) {
+  e.preventDefault();
+  quizData[i].flagged = !quizData[i].flagged;
+  flagBtn.classList.toggle('flagged', quizData[i].flagged);
+  flagBtn.textContent = quizData[i].flagged ? '🚩 Flagged' : '🚩 Flag';
+};
+flagBtnWrapper.appendChild(flagBtn);
+div.appendChild(flagBtnWrapper);
+
+      const header = document.createElement('div');
+      header.className = 'question-header';
+
+      const title = document.createElement('h2');
+      title.innerHTML = `${i + 1}. ${q.question}`;
+      header.appendChild(title);
+      div.appendChild(header);
+
+      const type = q.answer.length > 1 ? 'checkbox' : 'radio';
+
+      q.options.forEach(opt => {
+        const label = document.createElement('label');
+        const input = document.createElement('input');
+        input.type = type;
+        input.name = `q${i}`;
+        input.value = opt;
+        label.appendChild(input);
+        label.append(` ${opt}`);
+        div.appendChild(label);
+        div.appendChild(document.createElement('br'));
+      });
+
+      form.appendChild(div);
+    });
+  }
+
+  function showQuestion(index) {
+    document.querySelectorAll('.question').forEach((el, i) => {
+      el.style.display = i === index ? 'block' : 'none';
+    });
+    prevBtn.style.display = index > 0 ? 'inline-block' : 'none';
+    nextBtn.style.display = index < quizData.length - 1 ? 'inline-block' : 'none';
+  }
+
+  prevBtn.onclick = () => showQuestion(--current);
+  nextBtn.onclick = () => showQuestion(++current);
+
+  submitBtn.onclick = e => {
+    e.preventDefault();
+    let correct = 0;
+    const flaggedList = [];
+
+    quizData.forEach((q, i) => {
+      const qDiv = document.getElementById(`q${i}`);
+      const header = qDiv.querySelector('.question-header');
+      const inputs = qDiv.querySelectorAll(`input[name=q${i}]`);
+      const selected = Array.from(inputs).filter(input => input.checked).map(input => input.value);
+      const isCorrect = q.answer.length === selected.length && q.answer.every(ans => selected.includes(ans));
+
+      header.classList.remove('correct-answer', 'incorrect-answer');
+      header.classList.add(isCorrect ? 'correct-answer' : 'incorrect-answer');
+      qDiv.style.display = 'block';
+      qDiv.classList.add('submitted');
+
+      inputs.forEach(input => {
+        const label = input.parentElement;
+        label.classList.remove('correct', 'incorrect', 'selected-answer');
+
+        if (input.checked) {
+          label.classList.add('selected-answer');
+          if (q.answer.includes(input.value)) {
+            label.classList.add('correct');
+          } else {
+            label.classList.add('incorrect');
+          }
+        } else if (q.answer.includes(input.value)) {
+          label.classList.add('correct');
+        }
+      });
+
+      if (isCorrect) correct++;
+      if (q.flagged) {
+        const flagLabel = document.createElement('div');
+        flagLabel.className = 'flagged-question-label';
+        flagLabel.textContent = '🚩 This question was flagged for review';
+        header.appendChild(flagLabel);
+        flaggedList.push(`${i + 1}. ${q.question}`);
+      }
+    });
+
+    results.textContent = `You got ${correct} out of ${quizData.length} correct (${Math.round((correct / quizData.length) * 100)}%)`;
+
+    if (flaggedList.length > 0) {
+      flaggedResults.innerHTML = `<h3>🚩 Flagged Questions for Review:</h3><ul>` +
+        flaggedList.map(q => `<li>${q}</li>`).join('') +
+        '</ul>';
+    } else {
+      flaggedResults.innerHTML = '';
+    }
+  };
+</script>
+</body>
+</html>
